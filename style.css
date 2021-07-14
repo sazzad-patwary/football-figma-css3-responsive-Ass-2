@@ -1,15 +1,18 @@
 /* --------------------
 font style
 ---------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body{
-    
     font-family: 'Poppins', sans-serif;
     margin: 0%;
 }
+/* ----------------------
+
+first section
+-------------------------- */
+
 .top-container{
-    width: 100%;
     background-color: #000080;
     display: flex;
     flex-wrap: wrap;
@@ -26,27 +29,65 @@ body{
     padding-top: 154px;
     padding-left: 50px;
     margin-right: 20px;
-    margin-bottom: 240px;
-    
-    
+    margin-bottom: 18px;
     
 }
+
+/*---------------------------
+    button    button   button-
+-------------------------- */
+
+.button{
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    margin-left: 50px;
+}
+.link-button{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px 10px;  
+}
+
+.link-button:hover{
+    color: yellow;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 20px;
+    background-color: yellow;
+    transition: width 1s,height 1s, transform 1s;
+}
+.box:hover{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    transform: rotate(360deg);
+
+}
+/*-------------------------
+ first section banner
+ ----------------------- */
 .half-width img{
-    width: 556.01px;
+    width: 500px;
     height: 438px;
     padding-top: 153px;
     margin-bottom: 86px;
     margin-right: 100px;
     margin-left: 51px;
 }
+
 /*-----------------------------------------------------
- player & 
- player details
+            mid section & 
+            player details
 -------------------------------------------------------- */
 .mid-container{
     margin-top: 70px;
-    margin-left: 80px;
-    margin-right: 210px;
+    padding-left: 80px;
+    padding-right: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 27px;
@@ -72,6 +113,7 @@ body{
 .details{
     font-weight: 900;
     font-size: 16px;
+    font-weight: normal;
     margin-top: 10px;
     padding-bottom: 33px;
 }
@@ -85,7 +127,13 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 200px 450px 63px;
+    align-items: center;
+}
+.footer-content{
+    margin-top: 200px;
+    margin-left: 800px;
+    
+
 }
 .footer-image img{
     width: 483.87px;
@@ -113,3 +161,39 @@ footer{
     text-align: center;
     
 }
+/* --------------------------------
+
+Media Quaries        
+responsive style/-
+
+---------------------------------- */
+@media only screen and (max-width:688px) {
+    .top-container{
+        width: 1000px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        background-color: #000080;
+    }
+    .mid-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 150px;
+
+    }
+    .footer{
+        width: 283.87px;
+        height: 213px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+     .footer-content{
+        margin-top: 200px;
+        margin-left: 20px;
+        padding-left: 40px;
+    
+
+    } 
+}
+
+
