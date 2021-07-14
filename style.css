@@ -1,3 +1,115 @@
-h3{
-    color: blueviolet;
+/* --------------------
+font style
+---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+}
+.top-container{
+    width: 100%;
+    background-color: #000080;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+.half-width h1{
+    width: 485px;
+    height: 230px;
+    color: #FFFFFF;
+    font-size: 64px;
+    line-height: 80px;
+    padding-top: 154px;
+    padding-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 240px;
+    
+    
+    
+}
+.half-width img{
+    width: 556.01px;
+    height: 438px;
+    padding-top: 153px;
+    margin-bottom: 86px;
+    margin-right: 100px;
+    margin-left: 51px;
+}
+/*-----------------------------------------------------
+ player & 
+ player details
+-------------------------------------------------------- */
+.mid-container{
+    margin-top: 70px;
+    margin-left: 80px;
+    margin-right: 210px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px;
+}
+.players{
+    width: 330px;
+    height: 474px;
+    box-shadow: 2px 2px 15px black;
+    padding-bottom: 15px;
+}
+.image img{
+    width: 300px;
+    height: 256px;
+    padding: 15px;
+}
+.player{ 
+    margin: 0px 15px 15px 15px;
+}
+.player h3{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.details{
+    font-weight: 900;
+    font-size: 16px;
+    margin-top: 10px;
+    padding-bottom: 33px;
+}
+
+/*----------------------------------------
+    footer    footer  footer
+----------------------- --------------------*/
+footer{
+    width: 483.87px;
+    height: 213px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 200px 450px 63px;
+}
+.footer-image img{
+    width: 483.87px;
+    height: 110px;
+}
+.social-icon{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.social-icon li{
+    width: 32px;
+    height: 32px;
+    
+}
+.social-icon a i{
+    color: #969BAB;
+}
+.footer-bottom p{
+    font-size: 18px;
+    font-style: normal;
+    text-align: center;
+    
 }
